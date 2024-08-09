@@ -37,7 +37,7 @@ const Navbar = () => {
           <a
             href={"https://github.com/Adityamaurya790"}
             target="_blank"
-            className="bg-blue-500 text-white px-4 py-2 rounded-lg animate-background-pan "
+            className=" inline-block px-6 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-400 transition animate-background-pan "
           >
             Github Profile
           </a>

@@ -1,3 +1,4 @@
+import Experience from "./Components/Experience/Experience";
 import HeroSection from "./Components/HeroSection/Hero";
 import Navbar from "./Components/Navbar/Navbar";
 import Skills from "./Components/Skills/Skills";
@@ -8,6 +9,7 @@ function App() {
       <Navbar />
       <HeroSection />
       <Skills />
+      <Experience />
     </>
   );
 }

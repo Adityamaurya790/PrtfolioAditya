@@ -2,12 +2,12 @@ import React from "react";
 
 const ExperienceCard = ({ experience }) => {
   return (
-    <div className="w-[650px] border border-[#306EE8] shadow-lg p-3 justify-between relative overflow-hidden flex flex-col gap-3 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 md:w-[300px] md:p-2 md:gap-2">
-      <div className="flex gap-3 w-full">
+    <div className=" border border-purple-500 rounded-xl shadow-lg justify-between relative  flex flex-col gap-3 transition-all duration-300 ease-in-out hover:shadow-xl hover:-translate-y-1 md:w-[300px] md:p-2 md:gap-2">
+      <div className="flex gap-5 w-full">
         <img
           src={experience.img}
           alt=""
-          className="h-12 bg-black rounded-md mt-1 md:h-10"
+          className="h-12 bg-black rounded-xl mt-1 md:h-10"
         />
         <div className="flex flex-col w-full">
           <div className="text-lg font-semibold text-primary md:text-sm">

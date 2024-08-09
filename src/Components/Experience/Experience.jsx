@@ -12,17 +12,17 @@ const Experience = () => {
   return (
     <div
       id="experience"
-      className="flex flex-col items-center justify-center relative z-10 p-10 md:p-0"
+      className="flex items-center justify-center md:p-0 bg-gray-900 text-white"
     >
-      <div className="relative flex flex-col items-center w-full max-w-5xl p-20 gap-3">
-        <h1 className="text-4xl font-semibold text-center mt-5 text-primary md:mt-3 md:text-3xl">
+      <div className=" flex-col items-center w-full max-w-5xl p-20 gap-3">
+        <h1 className="text-4xl font-semibold text-center   md:mt-3 md:text-3xl">
           Experience
         </h1>
         <p className="text-lg text-center max-w-3xl text-secondary md:text-base">
           My work experience as a software engineer and working on different
           companies and projects.
         </p>
-        <div className="w-full max-w-4xl mt-2 flex flex-col items-center justify-center gap-3">
+        <div className="w-full max-w-4xl mt-2 flex flex-col items-center justify-center gap-3 ">
           <Timeline>
             {experiences.map((experience, index) => (
               <TimelineItem key={experience.title}>
