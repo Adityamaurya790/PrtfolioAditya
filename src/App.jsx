@@ -1,3 +1,4 @@
+import Contact from "./Components/Contact/Contact";
 import Experience from "./Components/Experience/Experience";
 import HeroSection from "./Components/HeroSection/Hero";
 import Navbar from "./Components/Navbar/Navbar";
@@ -10,6 +11,7 @@ function App() {
       <HeroSection />
       <Skills />
       <Experience />
+      <Contact />
     </>
   );
 }
