@@ -18,8 +18,7 @@ const Skills = () => {
           {skills.map((skill) => (
             <div
               key={skill.title}
-              className="w-full max-w-xl bg-card border border-purple-500 shadow-lg rounded-lg p-5 md:max-w-lg md:p-3 sm:max-w-xs sm:p-2 hover:-translate-y-1
-              transition-all duration-300 ease-in-out hover:shadow-xl"
+              className="w-full max-w-xl bg-card border border-purple-500 shadow-lg rounded-lg p-5 md:max-w-lg md:p-3 sm:max-w-xs sm:p-2 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl"
             >
               <h2 className="text-2xl font-semibold text-center text-secondary mb-5 dark:text-secondary">
                 {skill.title}

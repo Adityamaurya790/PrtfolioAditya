@@ -2,7 +2,6 @@ import React from "react";
 import HeroImg from "../Assets/Aditya.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../BIO/Bio";
-
 const HeroSection = () => {
   return (
     <div

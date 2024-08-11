@@ -26,7 +26,7 @@ const Navbar = () => {
           <a href="#experience" className="text-white hover:text-gray-300">
             Experience
           </a>
-          <a href="#projects" className="text-white hover:text-gray-300">
+          <a href="#Project" className="text-white hover:text-gray-300">
             Projects
           </a>
           <a href="#education" className="text-white hover:text-gray-300">
@@ -75,7 +75,7 @@ const Navbar = () => {
               Experience
             </a>
             <a
-              href="#projects"
+              href="#Project"
               className="text-white py-1"
               onClick={() => setIsOpen(false)}
             >
