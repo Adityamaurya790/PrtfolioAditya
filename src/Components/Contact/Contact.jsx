@@ -3,7 +3,7 @@ import React from "react";
 export default function App() {
   return (
     <div>
-      <section className="text-white body-font relative bg-gray-900 w-full">
+      <section className="text-white body-font relative bg-gray-900 border border-purple-500">
         <div className="container mx-auto px-5 py-24">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
