@@ -1,12 +1,13 @@
 import React from "react";
 
 export default function App() {
-  const classA =
-    "text-white body-font relative bg-gray-900 border border-purple-500 rounded-xl";
+  const classA = "text-white body-font relative bg-gray-900 ";
   return (
     <div>
       <section className={classA}>
-        <div className="container mx-auto px-5 py-24">
+        <div className="container mx-auto px-0 sm:px-5 py-24">
+          {" "}
+          {/* Adjusted padding */}
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
               Contact Me
@@ -15,7 +16,9 @@ export default function App() {
               Feel free to reach out to me for any questions or opportunities!
             </p>
           </div>
-          <div className="w-full md:w-2/3 lg:w-1/2 mx-auto">
+          <div className="w-full md:w-2/3 lg:w-1/2 mx-auto border border-purple-500 rounded-xl p-5">
+            {" "}
+            {/* Added border here */}
             <div className="flex flex-wrap -m-2">
               <div className="p-2 w-full sm:w-1/2">
                 <div className="relative">

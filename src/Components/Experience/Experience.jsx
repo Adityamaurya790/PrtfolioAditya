@@ -22,7 +22,7 @@ const Experience = () => {
           My work experience as a software engineer and working on different
           companies and projects.
         </p>
-        <div className="w-full max-w-4xl mt-2 flex flex-col items-center justify-center gap-3 ">
+        <div className="flex flex-col justify-center relative z-10 items-center pt-40 pr-0 pb-80 pl-0 md:py-0 md:pt-20 ">
           <Timeline>
             {experiences.map((experience, index) => (
               <TimelineItem key={experience.title}>

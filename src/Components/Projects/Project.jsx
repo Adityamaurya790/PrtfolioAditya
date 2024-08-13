@@ -7,7 +7,7 @@ const Project = () => {
   const tagClasses =
     "inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 border border-purple-500 ";
   const cardClass =
-    "max-w-xs rounded-xl overflow-hidden shadow-lg border m-4 border-purple-500 md:max-w-md md:p-2 sm:max-w-xs sm:p-2 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl";
+    "max-w-xs rounded-xl overflow-hidden shadow-lg border m-4 border-purple-500 md:max-w-50 md:p-1 sm:max-w-xs sm:p-2 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl";
 
   return (
     <>
