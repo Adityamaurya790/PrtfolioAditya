@@ -75,14 +75,14 @@ const Navbar = () => {
               Experience
             </a>
             <a
-              href="#Projects"
+              href="#projects"
               className="text-white py-1"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </a>
             <a
-              href="#educations"
+              href="#education"
               className="text-white py-1"
               onClick={() => setIsOpen(false)}
             >
