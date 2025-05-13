@@ -12,9 +12,6 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1ijyr5DhX3YK0K76w-g_iAJYDqumOPeok/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/adityamaurya790/",
-  twitter: "https://twitter.com/",
-  insta: "https://www.instagram.com/",
-  facebook: "https://www.facebook.com/",
 };
 
 export const skills = [

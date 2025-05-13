@@ -10,12 +10,12 @@ const Project = () => {
     "max-w-xs rounded-xl overflow-hidden shadow-lg border m-4 border-purple-500 md:max-w-50 md:p-1 sm:max-w-xs sm:p-2 hover:-translate-y-1 transition-all duration-300 ease-in-out hover:shadow-xl";
 
   return (
-    <>
+    <section id="projects">
       <div className="bg-gray-900 text-center text-white ">
-        <h1 className="text-4xl font-semibold p-7 md:text-3xl ">Project</h1>
+        <h1 className="text-4xl font-semibold p-7 md:text-3xl ">Projects</h1>
         <p className="text-lg max-w-3xl mx-auto text-secondary md:text-base">
           My work experience as a software engineer and working on different
-          companies and projects.
+          projects.
         </p>
       </div>
 
@@ -116,7 +116,7 @@ const Project = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

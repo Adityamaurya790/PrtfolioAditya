@@ -27,7 +27,7 @@ export default function App() {
   const classA = "text-white body-font relative bg-gray-900 ";
   return (
     <div>
-      <section className={classA}>
+      <section className={classA} id="contact">
         <div className="container mx-auto px-0 sm:px-5 py-24">
           <div className="flex flex-col text-center w-full mb-12">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">

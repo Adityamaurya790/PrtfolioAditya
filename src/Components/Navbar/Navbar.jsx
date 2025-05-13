@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { CgFontHeight } from "react-icons/cg";
 import { FaBars } from "react-icons/fa";
-// import { Close } from '@mui/icons-material';
+import { Link } from "react-scroll"; // Import Link from react-scroll
 import { Bio } from "../BIO/Bio";
 
 const Navbar = () => {
@@ -16,22 +16,47 @@ const Navbar = () => {
             <span className="ml-2 text-xl">Portfolio</span>
           </a>
         </div>
-        <div className="hidden md:flex space-x-4">
-          <a href="#about" className="text-white hover:text-gray-300">
+        <div className="hidden md:flex space-x-16">
+          <Link
+            to="about"
+            smooth={true}
+            duration={500}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             About
-          </a>
-          <a href="#skills" className="text-white hover:text-gray-300">
+          </Link>
+          <Link
+            to="skills"
+            smooth={true}
+            duration={1000}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Skills
-          </a>
-          <a href="#experience" className="text-white hover:text-gray-300">
+          </Link>
+          <Link
+            to="experience"
+            smooth={true}
+            duration={1000}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Experience
-          </a>
-          <a href="#Project" className="text-white hover:text-gray-300">
+          </Link>
+          <Link
+            to="projects"
+            smooth={true}
+            duration={1000}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
             Projects
-          </a>
-          <a href="#education" className="text-white hover:text-gray-300">
-            Education
-          </a>
+          </Link>
+          <Link
+            to="contact"
+            smooth={true}
+            duration={2000}
+            className="text-white hover:text-blue-500 cursor-pointer"
+          >
+            Contact
+          </Link>
         </div>
         <div className="hidden md:flex">
           <a
@@ -53,41 +78,51 @@ const Navbar = () => {
       {isOpen && (
         <div className="md:hidden bg-gray-700">
           <div className="flex flex-col items-center py-2 ">
-            <a
-              href="#about"
-              className="text-white py-1"
+            <Link
+              to="about"
+              smooth={true}
+              duration={500}
+              className="text-white py-1 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               About
-            </a>
-            <a
-              href="#skills"
-              className="text-white py-1"
+            </Link>
+            <Link
+              to="skills"
+              smooth={true}
+              duration={1000}
+              className="text-white py-1 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               Skills
-            </a>
-            <a
-              href="#experience"
-              className="text-white py-1"
+            </Link>
+            <Link
+              to="experience"
+              smooth={true}
+              duration={1000}
+              className="text-white py-1 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               Experience
-            </a>
-            <a
-              href="#projects"
-              className="text-white py-1"
+            </Link>
+            <Link
+              to="projects"
+              smooth={true}
+              duration={1000}
+              className="text-white py-1 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               Projects
-            </a>
-            <a
-              href="#education"
-              className="text-white py-1"
+            </Link>
+            <Link
+              to="contact"
+              smooth={true}
+              duration={2000}
+              className="text-white py-1 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
-              Education
-            </a>
+              Contact
+            </Link>
             <a
               href={Bio.github}
               target="_blank"
