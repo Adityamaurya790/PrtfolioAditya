@@ -25,30 +25,24 @@ const Project = () => {
           <div className="px-4 py-2">
             <div className="font-bold text-xl text-white mb-2">Book Store</div>
             <p className="text-white text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              An online bookstore web application where users can browse,
+              search, and purchase books. Features include user authentication,
+              book management, and a shopping cart. Built using the MERN stack
+              for a full-stack experience.
             </p>
           </div>
           <div className="px-4 pt-2 pb-2">
             <span className={tagClasses}>React Js</span>
-            <span className={tagClasses}>Mongo DB</span>
             <span className={tagClasses}>Node JS</span>
             <span className={tagClasses}>Express</span>
+            <span className={tagClasses}>Mongo DB</span>
           </div>
-
           <div className="px-4 pt-2 pb-2">
             <a
-              href="https://github.com/Adityamaurya790/weatherApp"
+              href="https://github.com/Adityamaurya790/BooKStore"
               className={tagClasses}
             >
               Souce Code
-            </a>
-            <a
-              href="https://weather-app-nu-sage-84.vercel.app/"
-              className={tagClasses}
-            >
-              View
             </a>
           </div>
         </div>
@@ -60,9 +54,10 @@ const Project = () => {
               Shoe Commerce
             </div>
             <p className="text-white text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              An e-commerce platform for shoes, allowing users to explore,
+              filter, and order footwear online. Implements product catalog,
+              order management, and secure checkout. Developed with React,
+              Node.js, and Express.
             </p>
           </div>
           <div className="px-4 pt-2 pb-2">
@@ -72,16 +67,10 @@ const Project = () => {
           </div>
           <div className="px-4 pt-2 pb-2">
             <a
-              href="https://github.com/Adityamaurya790/weatherApp"
+              href="https://github.com/Adityamaurya790/shoes_commerce"
               className={tagClasses}
             >
               Souce Code
-            </a>
-            <a
-              href="https://weather-app-nu-sage-84.vercel.app/"
-              className={tagClasses}
-            >
-              View
             </a>
           </div>
         </div>
@@ -91,14 +80,16 @@ const Project = () => {
           <div className="px-4 py-2">
             <div className="font-bold text-xl text-white mb-2">Weather</div>
             <p className="text-white text-base">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Voluptatibus quia, nulla! Maiores et perferendis eaque,
-              exercitationem praesentium nihil.
+              A weather forecast application that provides real-time weather
+              updates for any city. Integrates with a public weather API and
+              displays temperature, humidity, and weather conditions with a
+              clean UI.
             </p>
           </div>
           <div className="px-4 pt-2 pb-2">
-            <span className={tagClasses}>React Js</span>
-            <span className={tagClasses}>Node JS</span>
+            <span className={tagClasses}>HtTML5</span>
+            <span className={tagClasses}>CSS</span>
+            <span className={tagClasses}>JavaScript</span>
           </div>
           <div className="px-4 pt-2 pb-2">
             <a
@@ -106,12 +97,6 @@ const Project = () => {
               className={tagClasses}
             >
               Souce Code
-            </a>
-            <a
-              href="https://weather-app-nu-sage-84.vercel.app/"
-              className={tagClasses}
-            >
-              View
             </a>
           </div>
         </div>
