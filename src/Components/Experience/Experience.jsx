@@ -1,46 +1,117 @@
 import React from "react";
-import Timeline from "@mui/lab/Timeline";
-import TimelineItem from "@mui/lab/TimelineItem";
-import TimelineSeparator from "@mui/lab/TimelineSeparator";
-import TimelineConnector from "@mui/lab/TimelineConnector";
-import TimelineContent from "@mui/lab/TimelineContent";
-import TimelineDot from "@mui/lab/TimelineDot";
-import ExperienceCard from "./Ecards";
-import { experiences } from "../BIO/Bio";
+
+const experiences = [
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    role: "Full Stack Developer Intern",
+    company: "Codec Technologies India",
+    date: "June 2025 – Present",
+    desc: (
+      <>
+        <ul className="list-disc ml-5 space-y-1">
+          <li>
+            Gaining hands-on experience in full-stack web development, covering
+            the complete software development lifecycle.
+          </li>
+          <li>
+            Contributing to the development of industry-standard projects using
+            the MERN stack with real-time deployment.
+          </li>
+          <li>
+            Collaborating with senior developers in an Agile setup to build,
+            integrate, and optimize scalable web applications.
+          </li>
+        </ul>
+      </>
+    ),
+    skills: [
+      "JavaScript",
+      "React",
+      "NodeJs",
+      "MongoDB",
+      "RESTful APIs",
+      "DevOps",
+      "CI/CD",
+    ],
+  },
+  {
+    img: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    role: "Full Stack Developer",
+    company: "Programming Pathshala",
+    date: "June 2023 - July 2023",
+    desc: "Worked on the frontend of the web application using ReactJS, NodeJS and MongoDB for Database.",
+    skills: ["ReactJS", "NodeJs", "HTML", "CSS", "JavaScript", "MongoDB"],
+  },
+  {
+    img: "https://cdn-icons-png.flaticon.com/512/2922/2922506.png",
+    role: "Video Editor",
+    company: "Self Placed",
+    date: "June 2020 - Present",
+    desc: "I worked on various video editing projects for cultural events, youtube and also created reels for creators.",
+    skills: ["Wondershare Filmora", "Open Shot", "Clip Champ", "Canva"],
+  },
+];
 
 const Experience = () => {
   return (
-    <div
-      id="experience"
-      className="flex items-center justify-center md:p-0 bg-gray-900 text-white"
-    >
-      <div className=" flex-col items-center w-full max-w-5xl p-20 gap-3">
-        <h1 className="text-4xl font-semibold text-center   md:mt-3 md:text-3xl">
+    <section id="experience" className="bg-gray-900 py-12 px-2">
+      <div className="max-w-3xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
           Experience
-        </h1>
-        <p className="text-lg text-center max-w-3xl text-secondary md:text-base">
+        </h2>
+        <p className="text-center text-lg text-gray-300 mb-10">
           My work experience as a software engineer and working on different
           companies and projects.
         </p>
-        <div className="flex flex-col justify-center relative z-10 items-center pt-40 pr-0 pb-80 pl-0 md:py-0 md:pt-20 ">
-          <Timeline>
-            {experiences.map((experience, index) => (
-              <TimelineItem key={experience.title}>
-                <TimelineSeparator>
-                  <TimelineDot variant="outlined" />
-                  {index !== experiences.length - 1 && (
-                    <TimelineConnector style={{ background: "#FFA500" }} />
-                  )}
-                </TimelineSeparator>
-                <TimelineContent className="py-3 px-2">
-                  <ExperienceCard experience={experience} />
-                </TimelineContent>
-              </TimelineItem>
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-1/2 top-0 w-1 h-full bg-gradient-to-b from-purple-500 to-orange-400 transform -translate-x-1/2 z-0 rounded"></div>
+          <div className="flex flex-col gap-12 relative z-10">
+            {experiences.map((exp, idx) => (
+              <div key={idx} className="flex flex-col items-center">
+                {/* Dot */}
+                <div className="w-6 h-6 bg-gray-900 border-4 border-purple-500 rounded-full z-10 mb-2"></div>
+                {/* Card */}
+                <div className="w-full sm:w-4/5 md:w-3/4 bg-gray-800 border border-purple-500 rounded-xl shadow-lg p-6 mx-auto text-white relative">
+                  <div className="flex items-center gap-4 mb-2">
+                    <img
+                      src={exp.img}
+                      alt={exp.company}
+                      className="w-12 h-12 rounded-xl bg-black object-contain"
+                    />
+                    <div>
+                      <div className="text-xl font-bold">{exp.role}</div>
+                      <div className="text-base text-gray-300">
+                        {exp.company}
+                      </div>
+                      <div className="text-sm text-gray-400">{exp.date}</div>
+                    </div>
+                  </div>
+                  <div className="mt-2 text-base text-gray-200">
+                    {typeof exp.desc === "string" ? exp.desc : exp.desc}
+                  </div>
+                  <div className="mt-3">
+                    <span className="font-semibold text-purple-400">
+                      Skills:
+                    </span>
+                    <ul className="flex flex-wrap gap-2 mt-1">
+                      {exp.skills.map((skill, i) => (
+                        <li
+                          key={i}
+                          className="bg-purple-700/30 px-3 py-1 rounded text-sm text-purple-200"
+                        >
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              </div>
             ))}
-          </Timeline>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
