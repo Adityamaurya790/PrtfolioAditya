@@ -1,26 +1,19 @@
-# Use the official Node.js image as the base
-FROM node:20-alpine
+FROM node:20-alpine AS builder
 
-# Set the working directory
 WORKDIR /app
 
-# Copy package.json and package-lock.json (if available)
 COPY package*.json ./
 
-# Install dependencies
 RUN npm install
 
-# Copy the rest of the application code
 COPY . .
 
-# Build the React app for production
 RUN npm run build
 
-# Install serve to serve the production build
-RUN npm install -g serve
+FROM nginx:stable-alpine
 
-# Expose the port the app runs on
-EXPOSE 3000
+COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Command to run the app
-CMD ["serve", "-s", "build"]
+EXPOSE 80
+
+CMD ["nginx", "-g", "daemon off;"]

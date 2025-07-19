@@ -1,6 +1,9 @@
 node_modules
-build
-.dockerignore
-Dockerfile
+dist
+.vite
 .git
+Dockerfile
+.dockerignore
 .gitignore
+.env
+*.env.local
